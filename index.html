@@ -1,32 +1,42 @@
-<!DOCTYPE html> <!-- latest version HTML5 includes built-in HTML validations -->
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Form Validation</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="main-content">
-    <!-- For this test assignment, I assigned the form to be submitted to our CodeX Moodle login page -->
-    <form id="form" action="https://codexacademy.moodlecloud.com/login/index.php">
-      <h2>Week 3 Form</h2>
-    <!-- username field must be filled & atleast 5 characters -->
-      <label for="username">Username (HTML5 validated):</label>
-      <input type="text" id="username" name="username" required minlength="5" />
-    <!-- email must be filled and follow email format -->
-      <label for="useremail">Email:</label>
-      <input type="email" id="useremail" name="useremail" required />
-    <!-- password must be filled and atleast 6 characters -->
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required minlength="6" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <form id="form">
+        <h2>Week 3 Form</h2>
 
-      <button type="submit" class="cta-button submit-btn">Click to Action</button>
-    </form>
-    <!-- the validation messages -->
-    <div id="output"></div>
-  </main>
+        <!-- username field must be filled & at least 5 characters -->
+        <label for="username">Username (HTML5 validated):</label>
+        <input type="text" id="username" name="username" required minlength="5" />
 
-  <script src="script.js"></script>
-</body>
+        <!-- This Week3 assignment asks for another username with JS validation
+         for minimum 5 character length; Removed HTML5 validation to demonstrate JS only -->
+        <label for="Jusername">Username (JS validated):</label>
+        <input type="text" id="Jusername" name="Jusername" />
+        
+        <!-- email must be filled and follow email format -->
+        <label for="useremail">Email:</label>
+        <input type="email" id="useremail" name="useremail" required />
+
+        <!-- password must be filled and at least 6 characters -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <!-- clicking Submit will use JS form validation -->
+        <button type="submit" class="cta-button submit-btn">Submit</button>
+      </form>
+
+      <!-- the validation messages -->
+      <div id="output"></div>
+    </main>
+
+    <!-- JavaScript validation -->
+    <script src="script.js"></script>
+  </body>
 </html>
