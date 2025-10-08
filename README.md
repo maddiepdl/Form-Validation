@@ -11,8 +11,8 @@ This project demonstrates how to implement form validation using both HTML5 buil
 
 ## How It Works
 
-- HTML5 Validation: Ensures required fields are filled and meet minimum character requirements.
-- JavaScript Validation: Adds custom checks for fields not covered by HTML5, such as a second username field.
+- HTML5 Validation: Ensures required fields are filled and meet minimum characters.
+- JavaScript Validation: Adds custom checks for field not covered by HTML5- the second username field.
 - Feedback: Displays a success message or a brief error message with character requirements.
 
 ## References

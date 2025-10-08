@@ -47,7 +47,7 @@ function validateForm(htmlUsername, jsUsername, email, password) {
   }
 
   // Must not be empty
-  if (email.trim() === "") {
+  if (email === "") {
     isValid = false;
   }
 
