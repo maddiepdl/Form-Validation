@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh; /* Full viewport height */
 }
 
 .main-content {
@@ -27,26 +27,28 @@ input {
   border-radius: 4px;
 }
 
+/* Tiffany blue border for valid inputs: HTML5 validation */
 input:valid {
-  border-color: green;
+  border-color: #0ABAB5;
 }
 
+/* red for invalid inputs: HTML5 validation */
 input:invalid {
   border-color: red;
 }
 
 .submit-btn {
   padding: 12px;
-  width: 100%;
+  width: 100%;    /* Full width button */
   border: none;
   border-radius: 5px;
-  background: #0ABAB5;
+  background: #0ABAB5;    /* Tiffany Blue */
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
+/* Darker blue on hover */
 .submit-btn:hover {
-  background: #089e9a;
+  background: #067d79;
 }
